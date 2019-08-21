@@ -52,15 +52,14 @@ mean = mean.tolist()
 
 # Insert data to mean table
 # final_data = []
-table = resource.Table(data)
+table = resource.Table('mean')
 counter = 0
-with table.batch_writer() as batch:
-    for counter, i in enumerate(list_tables):
-        payload = {
-            "id" : date,
-            "sensor" : i,
-            "mean" : Decimal(mean[counter])
-        }
-        print(payload)
-        # batch.put_item(Item=payload)
-        # print({j : Decimal(mean[i])})
+for i in mean:
+    payload = {
+        "id" : date,
+        "sensor" : list_tables[counter],
+        "mean" : str(i)
+    }
+    counter = counter + 1
+    table.put_item(Item=payload)
+    
