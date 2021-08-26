@@ -1,7 +1,7 @@
 # Project_CCA
 Project Cloud Computing Kelas - A
 Project_CCA merupakan project akhir dari pelatihan DTS FGA Cloud Computing. Sistem yang dibuat pada project ini adalah sistem berbasis IoT.
-Sistem ini mendeteksi insensitas sampah dalam jangka waktu tertentu menggunakan sensor ketinggian kemudian memberikan informasi tersebut ke petugas sampah.
+Sistem ini mendeteksi insensitas sampah dalam jangka waktu tertentu menggunakan sensor ketinggian (Sensor Dummy) kemudian memberikan informasi tersebut ke petugas sampah.
 Sistem ini diterapkan di infrastruktur AWS. Services yang digunakan antara lain API Gateway, Lambda dan DynamoDB.
 Pada repository ini hanya berisi beberapa source code dari kesuluruhan sistem yang dibangun.
 Seluruh file python yang ada pada repository ini dijalankan di service Lambda.
